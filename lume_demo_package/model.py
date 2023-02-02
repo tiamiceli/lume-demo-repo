@@ -4,7 +4,7 @@ import numpy as np
 from lume_model.models import BaseModel
 from lume_model.variables import InputVariable, OutputVariable
 
-from lume-demo-package import INPUT_VARIABLES, OUTPUT_VARIABLES
+from lume_demo_package import INPUT_VARIABLES, OUTPUT_VARIABLES
 
 
 
@@ -41,13 +41,13 @@ class LumeDemoModel(BaseModel):
 
         """
 
-	self.output_variables["output1"].value = np.random.uniform(
-		input_variables["input1"].value,  # lower dist bound
-		input_variables["input2"].value,  # upper dist bound
-		(50, 50),
-	)
-	self.output_variables["output2"].value = input_variables["input1"].value
-	self.output_variables["output3"].value = input_variables["input2"].value
+        self.output_variables["output1"].value = np.random.uniform(
+            input_variables["input1"].value,  # lower dist bound
+            input_variables["input2"].value,  # upper dist bound
+            (50, 50),
+        )
+        self.output_variables["output2"].value = input_variables["input1"].value
+        self.output_variables["output3"].value = input_variables["input2"].value
 
 
         return self.output_variables
