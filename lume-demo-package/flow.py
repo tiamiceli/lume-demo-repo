@@ -21,8 +21,8 @@ from lume-demo-package.model import LumeDemoModel
 from lume-demo-package import INPUT_VARIABLES
 
 
-@task(log_stdout=True)
-def preprocessing_task(input_variables, misc_settings):
+#@task(log_stdout=True)
+#def preprocessing_task(input_variables, misc_settings):
     """If additional preprocessing of input variables are required, process the
     variables here. This task is flexible and can absorb other misc settings passed
     as parameters to the flow.
@@ -42,7 +42,7 @@ def preprocessing_task(input_variables, misc_settings):
         ```
 
     """
-    raise NotImplementedError("Called not implemented preprocessing_task in flow.")
+#    raise NotImplementedError("Called not implemented preprocessing_task in flow.")
 
 
 @task(log_stdout=True)
@@ -84,6 +84,8 @@ def format_file(output_variables):
         ```
 
     """
+    text = str(output_variables["output2"].value + output_variables["output3"].value)
+    return text
     raise NotImplementedError("Called not implemented format_file in flow.")
 
 
