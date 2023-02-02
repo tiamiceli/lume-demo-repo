@@ -29,7 +29,7 @@ RUN source /venv/bin/activate && \
     /venv/bin/conda-unpack
 
 COPY _entrypoint.sh /usr/local/bin/_entrypoint.sh
-COPY lume-demo-package/flow.py /opt/prefect/flow.py
+COPY lume_demo_package/flow.py /opt/prefect/flow.py
 
 RUN chmod +x /usr/local/bin/_entrypoint.sh
 

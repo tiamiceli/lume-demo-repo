@@ -1,4 +1,4 @@
-from lume-demo-package.flow import flow, output_variables
+from lume_demo_package.flow import flow, output_variables
 
 
 def test_flow_execution():

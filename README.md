@@ -1,6 +1,6 @@
 #  Lume Demo Project Model
 
-This repository packages the `LumeDemoModel` in `lume-demo-package/model.py ` for execution with [Prefect](https://docs.prefect.io/) using the flow described in `lume-demo-package/flow/flow.py` using the variables:
+This repository packages the `LumeDemoModel` in `lume_demo_package/model.py ` for execution with [Prefect](https://docs.prefect.io/) using the flow described in `lume_demo_package/flow/flow.py` using the variables:
 
 <!--- The input and output variable tables are replaced when generating the project in template/hooks/post_gen_project.py-->
 # input_variables
@@ -60,7 +60,7 @@ This README was automatically generated using the template defined in https://gi
     "github_url": "https://github.com/slaclab/lume-services-model-template",
     "project_name": "Lume Demo Project Model", 
     "repo_name": "lume-demo-repo", 
-    "package": "lume-demo-package",
+    "package": "lume_demo_package",
     "model_class": "LumeDemoModel"
 }
 ```

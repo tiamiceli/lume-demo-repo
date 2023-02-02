@@ -17,8 +17,8 @@ from lume_services.files import TextFile
 from lume_model.variables import InputVariable, OutputVariable
 from prefect.storage import Module
 
-from lume-demo-package.model import LumeDemoModel
-from lume-demo-package import INPUT_VARIABLES
+from lume_demo_package.model import LumeDemoModel
+from lume_demo_package import INPUT_VARIABLES
 
 
 #@task(log_stdout=True)

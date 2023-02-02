@@ -1,4 +1,4 @@
-from lume-demo-package.files import VARIABLE_FILE
+from lume_demo_package.files import VARIABLE_FILE
 from lume_model.utils import variables_from_yaml
 
 with open(VARIABLE_FILE, "r") as f:
